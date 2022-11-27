@@ -8,6 +8,7 @@
 
     <script src="js/Comics Store.js"></script>
     <script src="js/CursorEvents.js"></script>
+    <script src="js/infoBanner.js"></script>
   </head>
   <body>
     <a-scene id="main-scene">
@@ -43,6 +44,14 @@
           position="0 0 -3"
           geometry="primitive: ring; radiusInner: 0.08; radiusOuter: 0.12"
           material="color: orange; shader: flat"
+        ></a-entity>
+        <!-- Fade Background -->
+        <a-entity
+          id="fade-background"
+          geometry="primitive: sphere; radius: 2.5"
+          material="color: black; shader: flat; opacity: 0.6; transparent: true; side: back"
+          visible="false"
+          cursor-listener
         ></a-entity>
         <!--Background-->
         <a-entity> </a-entity>
